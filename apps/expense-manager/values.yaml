@@ -1,0 +1,9 @@
+image:
+  repository: reg.fm6.lab.mecan.ir/expense-app
+  tag: "latest" # TARGET_TAG_PLACEHOLDER
+replicaCount: 1
+
+service:
+  type: ClusterIP
+  port: 80
+  targetPort: 8080

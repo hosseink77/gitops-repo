@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: expense-app
+spec:
+  replicas: {{ .Values.replicaCount }}
+  selector:
+    matchLabels:
+      app: expense-app
+  template:
+    metadata:
+      labels:
+        app: expense-app
+    spec:
+      containers:
+        - name: expense-app
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          ports:
+            - containerPort: {{ .Values.service.targetPort }}
+          # اگر برنامه شما نیاز به Environment Variable دارد اینجا اضافه کنید
