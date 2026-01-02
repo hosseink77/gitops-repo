@@ -1,6 +1,6 @@
 image:
   repository: reg.fm6.lab.mecan.ir/expense-app
-  tag: "7874e82"
+  tag: "c153b77"
 replicaCount: 1
 
 service:
