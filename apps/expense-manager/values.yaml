@@ -1,6 +1,6 @@
 image:
   repository: reg.fm6.lab.mecan.ir/expense-app
-  tag: "latest" # TARGET_TAG_PLACEHOLDER
+  tag: "7874e82"
 replicaCount: 1
 
 service:
